@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>XML Employee Management Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Employee Management Portal</h2>
+
+        <div class="form">
+
+            <input type="text" id="id" placeholder="Employee ID">
+
+            <input type="text" id="name" placeholder="Employee Name">
+
+            <input type="text" id="department"
+                placeholder="Department">
+
+            <input type="number" id="salary"
+                placeholder="Salary">
+
+            <button onclick="addEmployee()">
+                Add Employee
+            </button>
+
+            <button onclick="exportXML()">
+                Export XML
+            </button>
+
+        </div>
+
+        <br>
+
+        <input type="file"
+            id="xmlFile"
+            accept=".xml">
+
+        <button onclick="importXML()">
+            Import XML
+        </button>
+
+        <div id="tableContainer"></div>
+
+    </div>
+
+    <script src="js/employee.js"></script>
+    <script src="js/xmlHandler.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
